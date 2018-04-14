@@ -1,0 +1,598 @@
+﻿/*  1996-2015 Kiteknology S.A. Todos los Derechos Reservados. */
+/*  CSS para proyecto {CAPREDENA}		                      */
+/*  Version 1.0                                               */
+/*  media: PRINT                      						  */
+/*  Fecha de creación 21/07/2015                              */
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5B5B5B;
+}
+
+h1 {
+    color: #4173B3;
+    font: 700 30px Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #4173B3;
+    font: 400 1.500em Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+h4 {
+    color: #6B7B91;
+    font: 700 1em Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+a {
+    color: inherit;
+}
+
+::-webkit-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+
+/*ESTILOS GENERICOS*/
+.botones {
+    display: none;
+}
+
+.btn-volver {
+    border: 1px solid #4273B4;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #4173B3;
+    margin: 0px 20px 10px 0px;
+    text-decoration: none;
+}
+
+    .btn-volver:hover {
+        background: #4273B4;
+        border: 1px solid #4273B4;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+.calendar {
+    background: url(../images/html/ico-calendario.png) no-repeat 0px 0px;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.txt-destacado {
+    color: #4173B3;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.padding-top-80 {
+    padding-top: 80px;
+}
+
+@media screen and (min-width:300px) and (max-width:767px) {
+    .padding-top-80, .no-padding-left, .no-padding-right {
+        padding: inherit;
+    }
+}
+
+/*ESTILOS DE FORMULARIO*/
+.data-width-50 {
+    width: 50%;
+}
+
+.data-width-100 {
+    width: 100%;
+}
+
+.obligatorio {
+    border: 1px solid #C03 !important;
+}
+
+.mensajes-error {
+    color: #E36967;
+}
+
+
+/*HEADER*/
+#header {
+    display: none;
+}
+
+/*CONTENIDOS*/
+.main {
+    padding-top: 0px;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .main {
+        padding-top: 0px;
+    }
+}
+
+#contenidos {
+    border-bottom: 1px solid #BDC9D1;
+    border-top: 2px solid #4173B3;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+    #contenidos.area-pensiones {
+        border-top: 2px solid #1C8BC0;
+    }
+
+    #contenidos.area-prestamos {
+        border-top: 2px solid #EC7D52;
+    }
+
+    #contenidos.area-salud {
+        border-top: 2px solid #E34846;
+    }
+
+    #contenidos.certificados {
+        border-top: 2px solid #74C3D4;
+    }
+
+    #contenidos.solicitud-tramite {
+        border-top: 2px solid #256F88;
+    }
+
+    #contenidos.timbre-digital {
+        border-top: 2px solid #79B965;
+    }
+
+    #contenidos.mis-datos {
+        border-top: 2px solid #806294;
+    }
+
+.padding-contenidos {
+    padding-left: 2%;
+}
+
+.img-formularios {
+    padding: 70px 0px 40px 0px;
+}
+
+/*FONTSIZE*/
+.fontsize {
+    display: none;
+}
+
+
+/*USUARIO*/
+#usuario {
+    font-size: 16px;
+    text-align: right;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    #usuario {
+        text-align: center;
+    }
+}
+
+
+/*MENU TRAMITES*/
+#menu-tramites {
+    display: none;
+}
+
+
+
+
+
+
+/*breadcrumb*/
+.breadcrumb {
+    background: none;
+    border-bottom: 1px solid #E4E7F0;
+    color: #8993B0;
+    padding: 0px 0px 15px 0px;
+}
+
+    .breadcrumb p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+/*HOME*/
+.img-intro {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+}
+
+    .img-intro img {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+    }
+
+
+/*BANNERS BOTTOM*/
+#banners-bottom {
+    display: none;
+}
+
+/*BOTONERA DE CERTIFICADOS*/
+#nav-solicitudes {
+}
+
+    #nav-solicitudes ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-solicitudes ul li {
+            display: block;
+            margin: 0px 0px 10px 0px;
+            padding: 0px;
+            width: 100%;
+            height: auto !important;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-solicitudes ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-solicitudes ul li a {
+                color: #9F9D99;
+                height: auto !important;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 0px;
+            }
+
+                #nav-solicitudes ul li a.txt-largo {
+                    padding-top: inherit;
+                }
+
+                #nav-solicitudes ul li a.btn-intereses {
+                    background-position: 10px -278px;
+                }
+
+                #nav-solicitudes ul li a.btn-calidades {
+                    background-position: 10px -588px;
+                }
+
+                #nav-solicitudes ul li a.btn-cargas-vigentes {
+                    background-position: 10px -140px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-anual {
+                    background-position: 10px -430px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-mensual {
+                    background-position: 10px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-prestamo-habitacional {
+                    background-position: -622px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-declaraciones-juradas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-solicitudes ul li a.btn-liquidacion-de-pension {
+                    background-position: -622px -585px;
+                }
+
+                #nav-solicitudes ul li a.btn-fechas-de-pago {
+                    background-position: -622px -275px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-lugar {
+                    background-position: -622px -435px;
+                }
+
+                #nav-solicitudes ul li a.btn-cambio-de-clave {
+                    background-position: 10px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizar-email {
+                    background-position: -622px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-de-domicilio {
+                    background-position: 10px -875px;
+                }
+
+                #nav-solicitudes ul li a.btn-convenios-salud {
+                    background-position: -622px -880px;
+                }
+
+                #nav-solicitudes ul li a.btn-consulta-descuento-salud {
+                    background-position: 12px -1030px;
+                }
+
+
+@media screen and (min-width:300px) and (max-width:640px) {
+    #nav-solicitudes ul li {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+
+/*FORMULARIOS*/
+.formularios {
+    padding: 0px 0px 20px 0px;
+}
+
+    .formularios input[type="text"], .formularios input[type="password"], .formularios input[type="email"], .formularios select {
+        border: 1px solid #B5B5B5;
+        padding-left: 10px;
+        height: 40px;
+        color: #929294;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #939297;
+        margin-bottom: 10px;
+    }
+
+    .formularios .bootstrap-select {
+        margin-bottom: 10px;
+    }
+
+        .formularios .bootstrap-select button {
+            height: 40px;
+            color: #939297;
+        }
+
+    .formularios .date {
+        width: 150px;
+    }
+
+        .formularios .date input {
+            width: 110px;
+        }
+
+        .formularios .date .input-group-addon {
+            background: none;
+            border: none;
+            border-radius: 0px;
+        }
+
+    .formularios .button {
+        background: #4173B3;
+        height: 32px;
+        padding: 5px 10px;
+        min-width: 110px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+    }
+
+    .formularios p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .formularios label {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .formularios .radiobutton {
+        padding-top: 5px;
+    }
+
+        .formularios .radiobutton label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 18px;
+            margin-right: 15px;
+            vertical-align: top;
+            font-weight: normal;
+        }
+
+        .formularios .radiobutton input[type=radio] {
+            display: none;
+        }
+
+        .formularios .radiobutton label:before {
+            background: #FFF;
+            border: 1px solid #B6B6B6;
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 10px;
+            height: 12px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+        }
+
+        .formularios .radiobutton input[type=radio]:checked + label:before {
+            background: #FFF;
+            content: "\2022";
+            color: #939297;
+            font-size: 12px;
+            text-align: center;
+            line-height: 10px;
+        }
+
+    .formularios .form-ayuda {
+        padding-left: 10px;
+        color: #888;
+    }
+
+
+/*INDICADORES ECONOMICOS*/
+.indicadores-economicos {
+    width: 230px;
+    margin: 0px auto 20px auto;
+    text-align: left;
+}
+
+    .indicadores-economicos.pull-right[class*="col-"] {
+        width: 35%;
+        min-width: 280px;
+        margin-right: 0px;
+    }
+
+    .indicadores-economicos h3 {
+        background: #A0B9D8;
+        font-size: 1em;
+        color: #FFF;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .indicadores-economicos p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .indicadores-economicos .indicadores-contenido {
+        border: 2px solid #CDDDEC;
+        padding: 10px;
+    }
+
+@media screen and (min-width:300px) and (max-width:767px) {
+    .indicadores-economicos.pull-right[class*="col-"] {
+        width: 100%;
+        min-width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+        float: none;
+        clear: both;
+    }
+}
+
+
+/*TABLA DATOS*/
+.table-data {
+    color: #6B7B91;
+    font-size: 12px;
+    border: 1px solid #A0B9D8;
+}
+
+    .table-data thead tr th {
+        background: #A0B9D8;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: top;
+    }
+
+    .table-data tbody tr td {
+        border: 1px solid #A0B9D8;
+        color: #6B7B91;
+        vertical-align: top;
+    }
+
+/*DATOS ODD EVEN*/
+.datos-odd-even {
+    border: 2px solid #CFDCEC;
+}
+
+    .datos-odd-even p {
+        margin: 0px;
+        padding: 10px;
+    }
+
+        .datos-odd-even p:nth-child(odd) {
+            background: #D9E3EF;
+        }
+
+/*TABLA: ODD EVEN*/
+.table-odd-even {
+    border: 2px solid #CFDCEC;
+    font-size: 1em;
+    color: #6B7B91;
+}
+
+    .table-odd-even td {
+        vertical-align: top;
+        padding: 5px 10px;
+        border-right: 1px solid #CFDCEC;
+    }
+
+    .table-odd-even tr:nth-child(odd) td {
+        background: #D9E3EF;
+    }
+
+
+
+/*RESULTADO*/
+.resultado {
+    padding-top: 10px;
+}
+
+    .resultado .text-success {
+    }
+
+
+/*FOOTER*/
+#footer {
+    background: #FFF;
+    clear: both;
+    color: #A0A0A0;
+    font-size: 12px;
+    line-height: 150%;
+    margin-top: 10px;
+    position: relative;
+}
+
+    #footer .linea-gob {
+        display: none;
+    }
+
+    #footer .contacto {
+        padding: 0px;
+    }

@@ -1,0 +1,4891 @@
+﻿/*  1996-2015 Kiteknology S.A. Todos los Derechos Reservados. */
+/*  CSS para proyecto {CAPREDENA}		                      */
+/*  Version 1.0                                               */
+/*  media: SCREEN                      						  */
+/*  Fecha de creaciÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³n 14/07/2015                              */
+
+/*MENU EXTRA*/
+.menu-extra {
+    display: none;
+    height: auto;
+    background: #006cb7;
+    width: 100%;
+    color: #fff;
+}
+/*FORM RESET*/
+.form-top {
+    float: right;
+}
+
+    .form-top input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 7px;
+        width: 100%;
+    }
+
+    .form-top ul {
+        list-style: none;
+    }
+
+        .form-top ul li {
+            float: left;
+            margin: 0 5px;
+            padding: 0 0 0 5px;
+            position: relative;
+        }
+
+    .form-top::-webkit-input-placeholder {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    .form-top ul li {
+        width: 90%;
+        margin: auto;
+    }
+
+    .form-top {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+        .form-top input {
+            margin: auto;
+            width: 100%;
+        }
+}
+
+.form-top button {
+    background: url(../images/html/btn-reset.png) center center no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin-right: -10px;
+}
+
+.form-top input:disabled {
+    font-size: 14px;
+    color: #006cb7;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #006cb7;
+    border-radius: 0;
+    padding: 10px 9px 7px 55px;
+    min-width: 195px;
+    font-weight: bold;
+}
+
+#lblRutCliente, #lblNombreCliente {
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 3px 0 5px;
+}
+
+#lblRutCliente {
+    position: absolute;
+    left: 0;
+}
+
+#lblNombreCliente {
+    position: absolute;
+    left: 0;
+}
+
+ul.dropdown-menu.multi-level {
+    width: 100%;
+    margin-top: -425px;
+    background-color: #0879B9;
+    padding: 0 30px;
+}
+
+    ul.dropdown-menu.multi-level a {
+        background-color: #0879B9;
+        color: #fff;
+    }
+
+.dropdown-submenu {
+    position: absolute;
+    z-index: 99;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+/*  HISTORIAL DE MODIFICACIONES                               */
+/*  dd/mm/aaaa Comentario de la modificacion realizada        */
+
+body {
+    background: #EDF1F7;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5B5B5B;
+}
+
+h1 {
+    color: #4173B3;
+    font: 700 30px 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #4173B3;
+    font: 400 1.500em 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+h4 {
+    color: #6B7B91;
+    font: 700 1em 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+a {
+    color: inherit;
+}
+
+::-webkit-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+/*ESTILOS GENERICOS*/
+.botones {
+    padding: 10px 0px !important;
+}
+
+    .botones button { /* margin-right: 10px; */
+    }
+
+    .botones .button {
+        background: #4173B3;
+        height: 32px;
+        padding: 5px 10px;
+        min-width: 110px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+    }
+
+.btn-volver {
+    border: 1px solid #4273B4;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #4173B3;
+    margin: 0px 10px 0 0px;
+    text-decoration: none;
+}
+
+    .btn-volver:hover {
+        background: #4273B4;
+        border: 1px solid #4273B4;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+.calendar {
+    background: url(../images/html/ico-calendario.png) no-repeat 0px 0px;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.txt-destacado {
+    color: #4173B3;
+}
+
+.box-big-icon {
+    margin-top: 7%;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.padding-top-80 {
+    padding-top: 80px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+a:focus {
+    outline: 5px auto transparent;
+}
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    .padding-top-80, .no-padding-left, .no-padding-right {
+        padding: inherit;
+    }
+}
+/*ESTILOS DE FORMULARIO*/
+.data-width-50 {
+    width: 50%;
+}
+
+.data-width-100 {
+    width: 100%;
+}
+
+.obligatorio {
+    border: 1px solid #C03 !important;
+}
+
+.mensajes-error {
+    color: #E36967;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+input.fix-input {
+    margin-bottom: 3px !important;
+}
+/*HEADER*/
+#header {
+    background: #FFF;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+    #header .navbar-brand {
+        padding: 0px;
+    }
+
+    #header form {
+        border-radius: 3px;
+        border: 1px solid #E0E3E5;
+        margin: 5px 0px 0px 0px;
+        padding: 0px;
+        width: 70%;
+        max-width: 350px;
+    }
+
+        #header form input {
+            border: none;
+            box-shadow: none;
+            borde-radius: 0px;
+            margin: 0px;
+            padding: 0px 0px 0px 10px;
+            width: 310px;
+        }
+
+            #header form input:focus {
+                box-shadow: none;
+                border: none;
+            }
+
+        #header form button, #header form input {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: top;
+        }
+
+        #header form button {
+           background: url(../images/html/sprite-menu-auxiliar.png) no-repeat 0px 0px;
+            width: 17px;
+            height: 17px;
+            font-size: 1px;
+            border: none;
+            margin-top: 7px;
+        }
+
+    #header .icono {
+        background: url(../images/html/sprite-menu-auxiliar.png) no-repeat 0px 0px;
+        color: #B7AFAF;
+        padding: 0px 0px 0px 20px;
+        margin: 15px 0px 0px 24px;
+    }
+
+    #header .home {
+        background-position: 0px -50px;
+    }
+
+    #header .salir {
+        background-position: 15px -98px;
+        border-left: 1px solid #CCC;
+        padding-left: 42px;
+    }
+
+    #header .navbar {
+        margin-bottom: 0px;
+        padding: 5px 0 0;
+    }
+
+    #header .navbar-toggle {
+        background: #CCC;
+    }
+
+        #header .navbar-toggle .icon-bar {
+            background: #FFF;
+        }
+
+body.fixed #header .navbar-brand img {
+    width: 78px;
+    height: auto;
+}
+
+.nav-tramites {
+    display: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    list-style: none;
+}
+
+    .nav-tramites li {
+        clear: both;
+        margin: 5px 0;
+        padding: 0px;
+    }
+
+        .nav-tramites li a {
+            display: block;
+            padding: 5px 3px;
+            border-bottom: 1px solid #BDC9D1;
+            text-decoration: none;
+            color: #91979A;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    #header img {
+        width: 90px;
+        height: auto;
+    }
+
+    #header .collapse.in {
+        clear: both;
+        text-align: center;
+    }
+
+    #header .navbar-right {
+        float: none;
+        clear: both;
+    }
+
+        #header .navbar-right li {
+            display: inline-block;
+        }
+
+    #header form {
+        min-width: 100%;
+        width: 100%;
+        clear: both;
+    }
+
+        #header form input {
+            width: 85%;
+        }
+
+        #header form button {
+            width: 10%;
+        }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 400px;
+    }
+
+    #header form {
+        margin-bottom: 20px;
+    }
+}
+/*CONTENIDOS*/
+.main {
+    padding-top: 100px;
+}
+
+.main-middle {
+    padding-top: 10px;
+}
+
+@media screen and (min-width:280px) and (max-width:600px) {
+    .main {
+        padding-top: 150px;
+    }
+}
+
+#contenidos {
+    background: #FFF;
+    border-bottom: 1px solid #BDC9D1;
+    border-top: 2px solid #4173B3;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+    #contenidos.area-pensiones {
+        border-top: 2px solid #1C8BC0;
+    }
+
+    #contenidos.area-prestamos {
+        border-top: 2px solid #EC7D52;
+    }
+
+    #contenidos.area-salud {
+        border-top: 2px solid #E34846;
+    }
+
+    #contenidos.certificados {
+        border-top: 2px solid #74C3D4;
+    }
+
+    #contenidos.solicitud-tramite {
+        border-top: 2px solid #256F88;
+    }
+
+    #contenidos.timbre-digital {
+        border-top: 2px solid #79B965;
+    }
+
+    #contenidos.mis-datos {
+        border-top: 2px solid #806294;
+    }
+
+.padding-contenidos {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+    .padding-contenidos .row-btns {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+
+        .padding-contenidos .row-btns .rb-content {
+            width: 185px;
+            height: 35px;
+            float: right;
+        }
+
+.rb-content a > span.glyphicon {
+    padding-right: 5px;
+}
+
+.padding-contenidos .botones-fix {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.area-salud {
+    min-height: 300px;
+}
+
+.img-formularios {
+    padding: 70px 0px 40px 0px;
+}
+
+@media screen and (min-width:280px) and (max-width:480px) {
+    .img-formularios {
+        display: none;
+    }
+}
+/*FONTSIZE*/
+.fontsize {
+    padding: 15px 40px 0px 0px;
+}
+
+    .fontsize ul li {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        margin: 0 0 0 4px;
+        line-height: 110%;
+        vertical-align: bottom;
+        padding: 0px;
+    }
+
+        .fontsize ul li a {
+            background: #bdc9d1;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            padding: 3px 2px 0;
+            text-align: right;
+        }
+
+        .fontsize ul li.small a {
+            width: 14px;
+            height: 14px;
+            font-size: 12px;
+        }
+
+        .fontsize ul li.medium a {
+            width: 18px;
+            height: 18px;
+            font-size: 16px;
+            margin: 4px 0 0;
+        }
+
+        .fontsize ul li.large a {
+            width: 22px;
+            height: 22px;
+            font-size: 20px;
+        }
+
+        .fontsize ul li.current a {
+            background: #0f69b4;
+        }
+/*USUARIO*/
+#usuario {
+    font-size: 16px;
+    text-align: right;
+    line-height: 140%;
+}
+
+    #usuario .txt-destacado {
+        background: url(../images/html/ico-usuario.png) no-repeat 0px 0px;
+        padding-left: 36px;
+        padding-bottom: 6px;
+    }
+
+@media screen and (min-width:280px) and (max-width:600px) {
+    #usuario {
+        text-align: center;
+    }
+}
+/*MENU EXTRA TRAMITES */
+#menu-tramites ul li {
+    font-weight: 600;
+    font-size: 11.5px;
+}
+
+.menu-tramites {
+    clear: both;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    line-height: 100%;
+}
+
+    .menu-tramites ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menu-tramites li {
+        float: left;
+        width: 130px;
+        height: 115px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 11.5px;
+        margin: 0px 10px 10px 0px;
+        vertical-align: top;
+        text-transform: uppercase;
+    }
+
+        .menu-tramites li:last-child {
+            margin: 0px;
+        }
+
+    .menu-tramites a {
+        background: #FFF;
+        border-bottom: 1px solid #BDC9D1;
+        color: #959DA6;
+        display: block;
+        height: 115px;
+        padding: 0px 10px;
+        position: relative;
+        text-decoration: none;
+    }
+
+        .menu-tramites a:after {
+            background: #E24848;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 0;
+            height: 3px;
+            content: "";
+            transition: width 0.3s;
+        }
+
+        .menu-tramites a:hover:after {
+            width: 100%;
+        }
+
+    .menu-tramites .icono {
+        background: url(../images/html/sprite-menu-tramites.png) no-repeat 0px 0px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .menu-tramites .btn-certificado .icono {
+        background-position: 20px 20px;
+    }
+
+    .menu-tramites .btn-timbre-digital .icono {
+        background-position: 20px -90px;
+    }
+
+    .menu-tramites .btn-timbre-digital:after {
+        background: #7cba67;
+    }
+
+    .menu-tramites .btn-consulta-estado-solicitud .icono {
+        background-position: 20px -90px;
+    }
+
+    .menu-tramites .btn-consulta-estado-solicitud:after {
+        background: #7cba67;
+    }
+
+    .menu-tramites .btn-area-prestamos .icono {
+        background-position: 20px -180px;
+    }
+
+    .menu-tramites .btn-area-prestamos:after {
+        background: #eb7c51;
+    }
+
+    .menu-tramites .btn-area-pensiones .icono {
+        background-position: 10px -280px;
+    }
+
+    .menu-tramites .btn-area-pensiones:after {
+        background: #007eb9;
+    }
+
+    .menu-tramites .btn-area-salud .icono {
+        background-position: -180px 10px;
+    }
+
+    .menu-tramites .btn-area-salud:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-solicitud-de-tramites .icono {
+        background-position: -180px -80px;
+    }
+
+    .menu-tramites .btn-solicitud-de-tramites:after {
+        background: #256f88;
+    }
+
+    .menu-tramites .btn-mis-datos .icono {
+        background-position: -180px -180px
+    }
+
+    .menu-tramites .btn-mis-datos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-sistema-oam .icono {
+        background-position: 20px -380px
+    }
+
+    .menu-tramites .btn-sistema-oam:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-administracion-oam .icono {
+        background-position: -180px -380px
+    }
+
+    .menu-tramites .btn-administracion-oam:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-archivo-legal .icono {
+        background-position: 20px -480px
+    }
+
+    .menu-tramites .btn-archivo-legal:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-agencia-virtual .icono {
+        background-position: -180px -480px
+    }
+
+    .menu-tramites .btn-mis-datos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-encuestas .icono {
+        background-position: 20px -580px
+    }
+
+    .menu-tramites .btn-encuestas:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-gti .icono {
+        background-position: -180px -580px
+    }
+
+    .menu-tramites .btn-gti:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-consultas-srcel .icono {
+        background-position: 20px -680px
+    }
+
+    .menu-tramites .btn-consultas-srcel:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-auditoria .icono {
+        background-position: -180px -680px
+    }
+
+    .menu-tramites .btn-auditoria:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-tramites .icono {
+        background-position: 20px -780px
+    }
+
+    .menu-tramites .btn-tramites:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-mandatos .icono {
+        background-position: -180px -780px
+    }
+
+    .menu-tramites .btn-mandatos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-imponentes .icono {
+        background-position: -180px -880px
+    }
+
+    .menu-tramites .btn-imponentes:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-validacion .icono {
+        background-position: 20px -880px
+    }
+
+    .menu-tramites .btn-validacion:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-mantencion .icono {
+        background-position: 20px -980px
+    }
+
+    .menu-tramites .btn-mantencion:after {
+        background: #e24848;
+    }
+
+@media screen and (min-width:290px) and (max-width:767px) {
+    .nav-tramites {
+        display: block;
+    }
+
+    .menu-tramites {
+        display: none;
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:640px) {
+    .menu-tramites li {
+        width: 45%;
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    .menu-tramites li {
+        margin-right: 5px;
+    }
+}
+
+ul.nav.navbar-nav.navbar-right {
+    text-align: center;
+    margin-top: 30px;
+}
+/*MENU TRAMITES*/
+#menu-tramites {
+    clear: both;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    line-height: 100%;
+}
+
+    #menu-tramites ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    #menu-tramites li {
+        float: left;
+        width: 130px;
+        height: 115px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0px 10px 10px 0px;
+        vertical-align: top;
+        text-transform: uppercase;
+    }
+
+        #menu-tramites li:last-child {
+            margin: 0px;
+        }
+
+    #menu-tramites a {
+        background: #FFF;
+        border-bottom: 1px solid #BDC9D1;
+        color: #959DA6;
+        display: block;
+        height: 115px;
+        padding: 0px 10px;
+        position: relative;
+        text-decoration: none;
+    }
+
+        #menu-tramites a:after {
+            background: #E24848;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 0;
+            height: 3px;
+            content: "";
+            transition: width 0.3s;
+        }
+
+        #menu-tramites a:hover:after {
+            width: 100%;
+        }
+
+    #menu-tramites .icono {
+        background: url(../images/html/sprite-menu-tramites.png) no-repeat 0px 0px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    #menu-tramites .btn-certificado .icono {
+        background-position: 20px 20px;
+    }
+
+    #menu-tramites .btn-timbre-digital .icono {
+        background-position: 20px -90px;
+    }
+
+    #menu-tramites .btn-timbre-digital:after {
+        background: #7cba67;
+    }
+
+    #menu-tramites .btn-area-prestamos .icono {
+        background-position: 20px -180px;
+    }
+
+    #menu-tramites .btn-area-prestamos:after {
+        background: #eb7c51;
+    }
+
+    #menu-tramites .btn-area-pensiones .icono {
+        background-position: 10px -280px;
+    }
+
+    #menu-tramites .btn-area-pensiones:after {
+        background: #007eb9;
+    }
+
+    #menu-tramites .btn-area-salud .icono {
+        background-position: -180px 10px;
+    }
+
+    #menu-tramites .btn-area-salud:after {
+        background: #e24848;
+    }
+
+    #menu-tramites .btn-solicitud-de-tramites .icono {
+        background-position: -180px -80px;
+    }
+
+    #menu-tramites .btn-solicitud-de-tramites:after {
+        background: #256f88;
+    }
+
+    #menu-tramites .btn-mis-datos .icono {
+        background-position: -180px -180px;
+    }
+
+    #menu-tramites .btn-mis-datos:after {
+        background: #826294;
+    }
+
+    #menu-tramites .btn-mas .icono {
+        background-position: -180px -270px;
+    }
+
+    #menu-tramites .btn-mas:after {
+        background: #826294;
+    }
+
+@media screen and (min-width:290px) and (max-width:767px) {
+    .nav-tramites {
+        display: block;
+    }
+
+    #menu-tramites {
+        display: none;
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:640px) {
+    #menu-tramites li {
+        width: 45%;
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    #menu-tramites li {
+        margin-right: 5px;
+    }
+}
+/*breadcrumb*/
+.breadcrumb {
+    background: none;
+    border-bottom: 1px solid #E4E7F0;
+    color: #8993B0;
+    padding: 0px 0px 15px 0px;
+}
+
+    .breadcrumb p {
+        margin: 0px;
+        padding: 0px;
+    }
+/*HOME*/
+.img-intro {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+}
+
+    .img-intro img {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+    }
+/*BOTONERA DE CERTIFICADOS*/
+#nav-solicitudes {
+}
+
+    #nav-solicitudes ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-solicitudes ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-solicitudes ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-solicitudes ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-solicitudes ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-solicitudes ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-solicitudes ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-solicitudes ul li a.btn-intereses {
+                    background-position: 10px -278px;
+                }
+
+                #nav-solicitudes ul li a.btn-calidades {
+                    background-position: 10px -588px;
+                }
+
+                #nav-solicitudes ul li a.btn-cargas-vigentes {
+                    background-position: 10px -140px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-anual {
+                    background-position: 10px -430px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-mensual {
+                    background-position: 10px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-prestamo-habitacional {
+                    background-position: -622px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-declaraciones-juradas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-solicitudes ul li a.btn-liquidacion-de-pension {
+                    background-position: -622px -585px;
+                }
+
+                #nav-solicitudes ul li a.btn-fechas-de-pago {
+                    background-position: -622px -275px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-lugar {
+                    background-position: -622px -435px;
+                }
+
+                #nav-solicitudes ul li a.btn-cambio-de-clave {
+                    background-position: 10px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizar-email {
+                    background-position: -622px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-de-domicilio {
+                    background-position: 10px -875px;
+                }
+
+                #nav-solicitudes ul li a.btn-convenios-salud {
+                    background-position: -622px -880px;
+                }
+
+                #nav-solicitudes ul li a.btn-consulta-descuento-salud {
+                    background-position: 12px -1030px;
+                }
+/*SISTEMA OAM*/
+#nav-sistema-oam {
+}
+
+    #nav-sistema-oam ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-sistema-oam ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-sistema-oam ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-sistema-oam ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-sistema-oam ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-sistema-oam ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-sistema-oam ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-sistema-oam ul li a.btn-emision-de-oam {
+                    background-position: -616px -129px;
+                }
+
+                #nav-sistema-oam ul li a.btn-consulta-por-titular {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-sistema-oam ul li a.btn-consulta-por-prestador {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-sistema-oam ul li a.btn-validacion-de-oam {
+                    background-position: 10px -278px;
+                }
+
+                #nav-sistema-oam ul li a.btn-anulacion-de-oam {
+                    background-position: -622px -585px;
+                }
+/*ADMINISTRACION OAM*/
+#nav-administracion-oam {
+}
+
+    #nav-administracion-oam ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-administracion-oam ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-administracion-oam ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-administracion-oam ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-administracion-oam ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-administracion-oam ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-administracion-oam ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-administracion-oam ul li a.btn-prestadores-hospitalarios {
+                    background-position: 10px -278px;
+                }
+
+                #nav-administracion-oam ul li a.btn-tipo-emisor-oam {
+                    background-position: 16px -584px;
+                }
+
+                #nav-administracion-oam ul li a.btn-tipos-beneficiarios {
+                    background-position: 16px -584px;
+                }
+
+                #nav-administracion-oam ul li a.btn-parametros {
+                    background-position: -620px -1021px;
+                }
+
+                #nav-administracion-oam ul li a.btn-estadistica-oam {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-administracion-oam ul li a.btn-nomina-ordenes {
+                    background-position: -616px -129px;
+                }
+
+                #nav-administracion-oam ul li a.btn-prestaciones-genericas {
+                    background-position: -622px -585px;
+                }
+
+                #nav-administracion-oam ul li a.btn-estadisticas-tipo-presentacion {
+                    background-position: -617px -1161px;
+                }
+/*ARCHIVO LEGAL*/
+#nav-archivo-legal {
+}
+
+    #nav-archivo-legal ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-archivo-legal ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-archivo-legal ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-archivo-legal ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-archivo-legal ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-archivo-legal ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-archivo-legal ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-archivo-legal ul li a.btn-archivo-legal {
+                    background-position: -622px -130px;
+                }
+/*AGENCIA VIRTUAL*/
+#nav-agencia-virtual {
+}
+
+    #nav-agencia-virtual ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-agencia-virtual ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-agencia-virtual ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-agencia-virtual ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-agencia-virtual ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-agencia-virtual ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-agencia-virtual ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-agencia-virtual ul li a.btn-consultor-en-linea {
+                    background-position: 20px -1312px;
+                }
+
+                #nav-agencia-virtual ul li a.btn-consultor-directo {
+                    background-position: -613px -1298px;
+                }
+/*ENCUENTAS*/
+#nav-encuestas {
+}
+
+    #nav-encuestas ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-encuestas ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-encuestas ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-encuestas ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-encuestas ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-encuestas ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-encuestas ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-encuestas ul li a.btn-activacion-de-encuestas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-encuestas ul li a.btn-bajar-resultados {
+                    background-position: -622px -585px;
+                }
+
+                #nav-encuestas ul li a.btn-modulo-autoconsulta {
+                    background-position: 10px -875px;
+                }
+
+                #nav-encuestas ul li a.btn-necesidades-capacitacion {
+                    background-position: -617px -1457px;
+                }
+
+                #nav-encuestas ul li a.btn-crear-encuestas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-encuestas ul li a.btn-satisfaccion-sitio-web {
+                    background-position: 10px -278px;
+                }
+/*GTI*/
+#nav-gti {
+}
+
+    #nav-gti ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-gti ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-gti ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-gti ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-gti ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-gti ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-gti ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-gti ul li a.btn-sistema-salud-region {
+                    background-position: -622px -435px;
+                }
+
+                #nav-gti ul li a.btn-imponentes-region {
+                    background-position: -622px -435px;
+                }
+
+                #nav-gti ul li a.btn-vulnerabilidad {
+                    background-position: 10px -278px;
+                }
+
+                #nav-gti ul li a.btn-beneficios-a-social-region {
+                    background-position: 26px -1468px;
+                }
+/*CONSULTAS SRCEL*/
+#nav-consultas-srcel {
+}
+
+    #nav-consultas-srcel ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-consultas-srcel ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-consultas-srcel ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-consultas-srcel ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-consultas-srcel ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-consultas-srcel ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-consultas-srcel ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-consultas-srcel ul li a.btn-datos-personales {
+                    background-position: -616px -129px;
+                }
+
+                #nav-consultas-srcel ul li a.btn-posesion-efectiva {
+                    background-position: -622px -585px;
+                }
+
+/*TRAMITES*/
+#nav-tramites {
+}
+
+    #nav-tramites ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-tramites ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-tramites ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-tramites ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-tramites ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-tramites ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-tramites ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-tramites ul li a.btn-solicitud-de-tramite {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion-de-areas {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion-carga-tareas {
+                    background-position: -616px -129px;
+                }
+
+/*VALIDACIÓN SALUD*/
+#nav-validacion {
+}
+
+    #nav-validacion ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-validacion ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-validacion ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-validacion ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-validacion ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-validacion ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-validacion ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-validacion ul li a.btn-consulta-beneficiarios {
+                    background-position: 12px -1030px;
+                }
+
+/*MANDATOS*/
+#nav-mandatos {
+}
+
+    #nav-mandatos ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-mandatos ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-mandatos ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-mandatos ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-mandatos ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-mandatos ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-mandatos ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-mandatos ul li a.btn-recepcion {
+                    background-position: -622px 25px;
+                }
+
+/*IMPONENTES*/
+#nav-imponentes {
+}
+
+    #nav-imponentes ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-imponentes ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-imponentes ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-imponentes ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-imponentes ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-imponentes ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-imponentes ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-imponentes ul li a.btn-consulta-desahucios {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-imponentes ul li a.btn-fecha-termino {
+                    background-position: -622px -275px;
+                }
+
+/*AUDITORIA INTERNA*/
+#nav-auditoria-interna {
+}
+
+    #nav-auditoria-interna ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-auditoria-interna ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-auditoria-interna ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-auditoria-interna ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-auditoria-interna ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-auditoria-interna ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-auditoria-interna ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-auditoria-interna ul li a.btn-informe-auditor {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-respuesta-auditado {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-seguimiento-auditado {
+                    background-position: 10px -588px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-seguimiento-dai {
+                    background-position: 10px -588px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-respuesta-auditor {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-actividad-auditor {
+                    background-position: -616px -129px;
+                }
+
+
+/*MANTENCION*/
+#nav-mantencion {
+}
+
+    #nav-mantencion ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-mantencion ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-mantencion ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-mantencion ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-mantencion ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-mantencion ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-mantencion ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-mantencion ul li a.btn-usuarios-externos {
+                    background-position: 10px -140px;
+                }
+
+                #nav-mantencion ul li a.btn-permisos {
+                    background-position: -620px -1021px;
+                }
+
+                #nav-mantencion ul li a.btn-perfiles {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-funciones {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-menus {
+                    background-position: 20px -1312px;
+                }
+
+                #nav-mantencion ul li a.btn-cambio-clave {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-aplicaciones {
+                    background-position: -617px -1457px;
+                }
+
+                #nav-mantencion ul li a.btn-crear-clave-pensionado {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-informe-cambio-clave-pensionado {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-circulos {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-actualizar-email {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-envio-email-corporativo {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-mant-mail-corporativo {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-desbloqueo-de-claves {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-estadistica-uso {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-consultor-cpdn {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-prestador-salud {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-cons-ext-salud {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-usuario-institucion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-usuarios-intranet {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-factor-actualizacion-sii {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-declaracion-jurada {
+                    background-position: -622px -585px;
+                }
+
+                #nav-mantencion ul li a.btn-tarjetas-de-identificacion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-estadisticas-ips {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-mantencion ul li a.btn-vigencia-usuarios {
+                    background-position: -622px -585px;
+                }
+
+
+
+@media screen and (min-width:280px) and (max-width:640px) {
+    #nav-solicitudes ul li {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+/*FORMULARIOS*/
+.formularios {
+    padding: 0px 0px 50px 0px;
+}
+
+    .formularios input[type="text"], .formularios input[type="password"], .formularios input[type="email"], .formularios select {
+        border: 1px solid #B5B5B5;
+        padding-left: 10px;
+        height: 40px;
+        color: #929294;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #939297;
+        margin-bottom: 10px;
+    }
+
+    .formularios .bootstrap-select {
+        margin-bottom: 10px;
+    }
+
+        .formularios .bootstrap-select button {
+            height: 40px;
+            color: #939297;
+        }
+
+    .formularios .date {
+        width: 150px;
+    }
+
+        .formularios .date input {
+            width: 110px;
+        }
+
+        .formularios .date .input-group-addon {
+            background: none;
+            border: none;
+            border-radius: 0px;
+        }
+
+    .formularios p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .formularios label {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .formularios .radiobutton {
+        padding-top: 5px;
+    }
+
+        .formularios .radiobutton label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 18px;
+            margin-right: 15px;
+            vertical-align: top;
+            font-weight: normal;
+        }
+
+        .formularios .radiobutton input[type=radio] {
+            display: none;
+        }
+
+        .formularios .radiobutton label:before {
+            background: #FFF;
+            border: 1px solid #B6B6B6;
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 10px;
+            height: 12px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+        }
+
+        .formularios .radiobutton input[type=radio]:checked + label:before {
+            background: #FFF;
+            content: "\2022";
+            color: #939297;
+            font-size: 12px;
+            text-align: center;
+            line-height: 10px;
+        }
+
+    .formularios .form-ayuda {
+        color: #888;
+        padding: 10px;
+    }
+
+    .formularios .form-declaracion-jurada label {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        min-height: 40px;
+    }
+
+    .formularios .form-declaracion-jurada-folio {
+    }
+
+        .formularios .form-declaracion-jurada-folio label {
+            margin-right: 10px;
+        }
+
+        .formularios .form-declaracion-jurada-folio input[type="text"] {
+            width: 210px;
+        }
+/*INDICADORES ECONOMICOS*/
+.indicadores-economicos {
+    width: 230px;
+    margin: 0px auto 20px auto;
+    text-align: left;
+}
+
+    .indicadores-economicos.pull-right[class*="col-"] {
+        width: 35%;
+        min-width: 280px;
+        margin-right: 0px;
+    }
+
+    .indicadores-economicos h3 {
+        background: #A0B9D8;
+        font-size: 1em;
+        color: #FFF;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .indicadores-economicos p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .indicadores-economicos .indicadores-contenido {
+        border: 2px solid #CDDDEC;
+        padding: 10px;
+    }
+/*  1996-2015 Kiteknology S.A. Todos los Derechos Reservados. */
+/*  CSS para proyecto {CAPREDENA}		                      */
+/*  Version 1.0                                               */
+/*  media: SCREEN                      						  */
+/*  Fecha de creaciÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³n 14/07/2015                              */
+
+/*MENU EXTRA*/
+.menu-extra {
+    display: none;
+    height: auto;
+    background: #006cb7;
+    width: 100%;
+    color: #fff;
+}
+/*FORM RESET*/
+.form-top {
+    float: right;
+}
+
+    .form-top input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 7px;
+        width: 100%;
+    }
+
+    .form-top ul {
+        list-style: none;
+    }
+
+        .form-top ul li {
+            float: left;
+            margin: 0 5px;
+            padding: 0 0 0 5px;
+            position: relative;
+        }
+
+    .form-top::-webkit-input-placeholder {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    .form-top ul li {
+        width: 90%;
+        margin: auto;
+    }
+
+    .form-top {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+        .form-top input {
+            margin: auto;
+            width: 100%;
+        }
+}
+
+.form-top button {
+    background: url(../images/html/btn-reset.png) center center no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin-right: -10px;
+}
+
+.form-top input:disabled {
+    font-size: 14px;
+    color: #006cb7;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #006cb7;
+    border-radius: 0;
+    padding: 10px 9px 7px 55px;
+    min-width: 195px;
+    font-weight: bold;
+}
+
+#lblRutCliente, #lblNombreCliente {
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 3px 0 5px;
+}
+
+#lblRutCliente {
+    position: absolute;
+    left: 0;
+}
+
+#lblNombreCliente {
+    position: absolute;
+    left: 0;
+}
+
+ul.dropdown-menu.multi-level {
+    width: 100%;
+    margin-top: -425px;
+    background-color: #0879B9;
+    padding: 0 30px;
+}
+
+    ul.dropdown-menu.multi-level a {
+        background-color: #0879B9;
+        color: #fff;
+    }
+
+.dropdown-submenu {
+    position: absolute;
+    z-index: 99;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+/*  HISTORIAL DE MODIFICACIONES                               */
+/*  dd/mm/aaaa Comentario de la modificacion realizada        */
+
+body {
+    background: #EDF1F7;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5B5B5B;
+}
+
+h1 {
+    color: #4173B3;
+    font: 700 30px 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #4173B3;
+    font: 400 1.500em 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+h4 {
+    color: #6B7B91;
+    font: 700 1em 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+a {
+    color: inherit;
+}
+
+::-webkit-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #D7D7D7 !important;
+    opacity: 1;
+}
+/*ESTILOS GENERICOS*/
+.botones {
+    padding: 10px 0px !important;
+}
+
+    .botones button { /* margin-right: 10px; */
+    }
+
+    .botones .button {
+        background: #4173B3;
+        height: 32px;
+        padding: 5px 10px;
+        min-width: 110px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+    }
+
+.btn-volver {
+    border: 1px solid #4273B4;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #4173B3;
+    margin: 0px 10px 0 0px;
+    text-decoration: none;
+}
+
+    .btn-volver:hover {
+        background: #4273B4;
+        border: 1px solid #4273B4;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+.calendar {
+    background: url(../images/html/ico-calendario.png) no-repeat 0px 0px;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.txt-destacado {
+    color: #4173B3;
+}
+
+.box-big-icon {
+    margin-top: 7%;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.padding-top-80 {
+    padding-top: 80px;
+}
+
+olor: #E36967;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+input.fix-input {
+    margin-bottom: 3px !important;
+}
+    .padding-top-80, .no-padding-left, .no-padding-right {
+        padding: inherit;
+    }
+}
+/*ESTILOS DE FORMULARIO*/
+.data-width-50 {
+    width: 50%;
+}
+
+.data-width-100 {
+    width: 100%;
+}
+
+.obligatorio {
+    border: 1px solid #C03 !important;
+}
+
+.mensajes-error {
+    color: #E36967;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+input.fix-input {
+    margin-bottom: 3px !important;
+}
+/*HEADER*/
+#header {
+    background: #FFF;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+    #header .navbar-brand {
+        padding: 0px;
+    }
+
+    #header form {
+        border-radius: 3px;
+        border: 1px solid #E0E3E5;
+        margin: 5px 0px 0px 0px;
+        padding: 0px;
+        width: 70%;
+        max-width: 350px;
+    }
+
+        #header form input {
+            border: none;
+            box-shadow: none;
+            borde-radius: 0px;
+            margin: 0px;
+            padding: 0px 0px 0px 10px;
+            width: 310px;
+        }
+
+            #header form input:focus {
+                box-shadow: none;
+                border: none;
+            }
+
+        #header form button, #header form input {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: top;
+        }
+
+        #header form button {
+            background: url(../images/html/sprite-menu-auxiliar.png) no-repeat 0px 0px;
+            width: 17px;
+            height: 17px;
+            font-size: 1px;
+            border: none;
+            margin-top: 7px;
+        }
+
+    #header .icono {
+        background: url(../images/html/sprite-menu-auxiliar.png) no-repeat 0px 0px;
+        color: #B7AFAF;
+        padding: 0px 0px 0px 20px;
+        margin: 15px 0px 0px 24px;
+    }
+
+    #header .home {
+        background-position: 0px -50px;
+    }
+
+    #header .salir {
+        background-position: 15px -98px;
+        border-left: 1px solid #CCC;
+        padding-left: 42px;
+    }
+
+    #header .navbar {
+        margin-bottom: 0px;
+        padding: 5px 0 0;
+    }
+
+    #header .navbar-toggle {
+        background: #CCC;
+    }
+
+        #header .navbar-toggle .icon-bar {
+            background: #FFF;
+        }
+
+body.fixed #header .navbar-brand img {
+    width: 78px;
+    height: auto;
+}
+
+.nav-tramites {
+    display: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    list-style: none;
+}
+
+    .nav-tramites li {
+        clear: both;
+        margin: 5px 0;
+        padding: 0px;
+    }
+
+        .nav-tramites li a {
+            display: block;
+            padding: 5px 3px;
+            border-bottom: 1px solid #BDC9D1;
+            text-decoration: none;
+            color: #91979A;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    #header img {
+        width: 90px;
+        height: auto;
+    }
+
+    #header .collapse.in {
+        clear: both;
+        text-align: center;
+    }
+
+    #header .navbar-right {
+        float: none;
+        clear: both;
+    }
+
+        #header .navbar-right li {
+            display: inline-block;
+        }
+
+    #header form {
+        min-width: 100%;
+        width: 100%;
+        clear: both;
+    }
+
+        #header form input {
+            width: 85%;
+        }
+
+        #header form button {
+            width: 10%;
+        }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 400px;
+    }
+
+    #header form {
+        margin-bottom: 20px;
+    }
+}
+/*CONTENIDOS*/
+.main {
+    padding-top: 100px;
+}
+
+.main-middle {
+    padding-top: 10px;
+}
+
+@media screen and (min-width:280px) and (max-width:600px) {
+    .main {
+        padding-top: 150px;
+    }
+}
+
+#contenidos {
+    background: #FFF;
+    border-bottom: 1px solid #BDC9D1;
+    border-top: 2px solid #4173B3;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+    #contenidos.area-pensiones {
+        border-top: 2px solid #1C8BC0;
+    }
+
+    #contenidos.area-prestamos {
+        border-top: 2px solid #EC7D52;
+    }
+
+    #contenidos.area-salud {
+        border-top: 2px solid #E34846;
+    }
+
+    #contenidos.certificados {
+        border-top: 2px solid #74C3D4;
+    }
+
+    #contenidos.solicitud-tramite {
+        border-top: 2px solid #256F88;
+    }
+
+    #contenidos.timbre-digital {
+        border-top: 2px solid #79B965;
+    }
+
+    #contenidos.mis-datos {
+        border-top: 2px solid #806294;
+    }
+
+.padding-contenidos {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+    .padding-contenidos .row-btns {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+
+        .padding-contenidos .row-btns .rb-content {
+            width: 185px;
+            height: 35px;
+            float: right;
+        }
+
+.rb-content a > span.glyphicon {
+    padding-right: 5px;
+}
+
+.padding-contenidos .botones-fix {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.area-salud {
+    min-height: 300px;
+}
+
+.img-formularios {
+    padding: 70px 0px 40px 0px;
+}
+
+@media screen and (min-width:280px) and (max-width:480px) {
+    .img-formularios {
+        display: none;
+    }
+}
+/*FONTSIZE*/
+.fontsize {
+    padding: 15px 40px 0px 0px;
+}
+
+    .fontsize ul li {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        margin: 0 0 0 4px;
+        line-height: 110%;
+        vertical-align: bottom;
+        padding: 0px;
+    }
+
+        .fontsize ul li a {
+            background: #bdc9d1;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            padding: 3px 2px 0;
+            text-align: right;
+        }
+
+        .fontsize ul li.small a {
+            width: 14px;
+            height: 14px;
+            font-size: 12px;
+        }
+
+        .fontsize ul li.medium a {
+            width: 18px;
+            height: 18px;
+            font-size: 16px;
+            margin: 4px 0 0;
+        }
+
+        .fontsize ul li.large a {
+            width: 22px;
+            height: 22px;
+            font-size: 20px;
+        }
+
+        .fontsize ul li.current a {
+            background: #0f69b4;
+        }
+/*USUARIO*/
+#usuario {
+    font-size: 16px;
+    text-align: right;
+    line-height: 140%;
+}
+
+    #usuario .txt-destacado {
+        background: url(../images/html/ico-usuario.png) no-repeat 0px 0px;
+        padding-left: 36px;
+        padding-bottom: 6px;
+    }
+
+@media screen and (min-width:280px) and (max-width:600px) {
+    #usuario {
+        text-align: center;
+    }
+}
+/*MENU EXTRA TRAMITES */
+#menu-tramites ul li {
+    font-weight: 600;
+    font-size: 11.5px;
+}
+
+.menu-tramites {
+    clear: both;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    line-height: 100%;
+}
+
+    .menu-tramites ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menu-tramites li {
+        float: left;
+        width: 130px;
+        height: 115px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 11.5px;
+        margin: 0px 10px 10px 0px;
+        vertical-align: top;
+        text-transform: uppercase;
+    }
+
+        .menu-tramites li:last-child {
+            margin: 0px;
+        }
+
+    .menu-tramites a {
+        background: #FFF;
+        border-bottom: 1px solid #BDC9D1;
+        color: #959DA6;
+        display: block;
+        height: 115px;
+        padding: 0px 10px;
+        position: relative;
+        text-decoration: none;
+    }
+
+        .menu-tramites a:after {
+            background: #E24848;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 0;
+            height: 3px;
+            content: "";
+            transition: width 0.3s;
+        }
+
+        .menu-tramites a:hover:after {
+            width: 100%;
+        }
+
+    .menu-tramites .icono {
+        background: url(../images/html/sprite-menu-tramites.png) no-repeat 0px 0px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .menu-tramites .btn-certificado .icono {
+        background-position: 20px 20px;
+    }
+
+    .menu-tramites .btn-timbre-digital .icono {
+        background-position: 20px -90px;
+    }
+
+    .menu-tramites .btn-timbre-digital:after {
+        background: #7cba67;
+    }
+
+    .menu-tramites .btn-consulta-estado-solicitud .icono {
+        background-position: 20px -90px;
+    }
+
+    .menu-tramites .btn-consulta-estado-solicitud:after {
+        background: #7cba67;
+    }
+
+    .menu-tramites .btn-area-prestamos .icono {
+        background-position: 20px -180px;
+    }
+
+    .menu-tramites .btn-area-prestamos:after {
+        background: #eb7c51;
+    }
+
+    .menu-tramites .btn-area-pensiones .icono {
+        background-position: 10px -280px;
+    }
+
+    .menu-tramites .btn-area-pensiones:after {
+        background: #007eb9;
+    }
+
+    .menu-tramites .btn-area-salud .icono {
+        background-position: -180px 10px;
+    }
+
+    .menu-tramites .btn-area-salud:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-solicitud-de-tramites .icono {
+        background-position: -180px -80px;
+    }
+
+    .menu-tramites .btn-solicitud-de-tramites:after {
+        background: #256f88;
+    }
+
+    .menu-tramites .btn-mis-datos .icono {
+        background-position: -180px -180px
+    }
+
+    .menu-tramites .btn-mis-datos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-sistema-oam .icono {
+        background-position: 20px -380px
+    }
+
+    .menu-tramites .btn-sistema-oam:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-administracion-oam .icono {
+        background-position: -180px -380px
+    }
+
+    .menu-tramites .btn-administracion-oam:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-archivo-legal .icono {
+        background-position: 20px -480px
+    }
+
+    .menu-tramites .btn-archivo-legal:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-agencia-virtual .icono {
+        background-position: -180px -480px
+    }
+
+    .menu-tramites .btn-mis-datos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-encuestas .icono {
+        background-position: 20px -580px
+    }
+
+    .menu-tramites .btn-encuestas:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-gti .icono {
+        background-position: -180px -580px
+    }
+
+    .menu-tramites .btn-gti:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-consultas-srcel .icono {
+        background-position: 20px -680px
+    }
+
+    .menu-tramites .btn-consultas-srcel:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-auditoria .icono {
+        background-position: -180px -680px
+    }
+
+    .menu-tramites .btn-auditoria:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-tramites .icono {
+        background-position: 20px -780px
+    }
+
+    .menu-tramites .btn-tramites:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-mandatos .icono {
+        background-position: -180px -780px
+    }
+
+    .menu-tramites .btn-mandatos:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-imponentes .icono {
+        background-position: -180px -880px
+    }
+
+    .menu-tramites .btn-imponentes:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-validacion .icono {
+        background-position: 20px -880px
+    }
+
+    .menu-tramites .btn-validacion:after {
+        background: #e24848;
+    }
+
+    .menu-tramites .btn-mantencion .icono {
+        background-position: 20px -980px
+    }
+
+    .menu-tramites .btn-mantencion:after {
+        background: #e24848;
+    }
+
+@media screen and (min-width:290px) and (max-width:767px) {
+    .nav-tramites {
+        display: block;
+    }
+
+    .menu-tramites {
+        display: none;
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:640px) {
+    .menu-tramites li {
+        width: 45%;
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    .menu-tramites li {
+        margin-right: 5px;
+    }
+}
+
+ul.nav.navbar-nav.navbar-right {
+    text-align: center;
+    margin-top: 30px;
+}
+/*MENU TRAMITES*/
+#menu-tramites {
+    clear: both;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    line-height: 100%;
+}
+
+    #menu-tramites ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    #menu-tramites li {
+        float: left;
+        width: 130px;
+        height: 115px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0px 10px 10px 0px;
+        vertical-align: top;
+        text-transform: uppercase;
+    }
+
+        #menu-tramites li:last-child {
+            margin: 0px;
+        }
+
+    #menu-tramites a {
+        background: #FFF;
+        border-bottom: 1px solid #BDC9D1;
+        color: #959DA6;
+        display: block;
+        height: 115px;
+        padding: 0px 10px;
+        position: relative;
+        text-decoration: none;
+    }
+
+        #menu-tramites a:after {
+            background: #E24848;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 0;
+            height: 3px;
+            content: "";
+            transition: width 0.3s;
+        }
+
+        #menu-tramites a:hover:after {
+            width: 100%;
+        }
+
+    #menu-tramites .icono {
+        background: url(../images/html/sprite-menu-tramites.png) no-repeat 0px 0px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    #menu-tramites .btn-certificado .icono {
+        background-position: 20px 20px;
+    }
+
+    #menu-tramites .btn-timbre-digital .icono {
+        background-position: 20px -90px;
+    }
+
+    #menu-tramites .btn-timbre-digital:after {
+        background: #7cba67;
+    }
+
+    #menu-tramites .btn-area-prestamos .icono {
+        background-position: 20px -180px;
+    }
+
+    #menu-tramites .btn-area-prestamos:after {
+        background: #eb7c51;
+    }
+
+    #menu-tramites .btn-area-pensiones .icono {
+        background-position: 10px -280px;
+    }
+
+    #menu-tramites .btn-area-pensiones:after {
+        background: #007eb9;
+    }
+
+    #menu-tramites .btn-area-salud .icono {
+        background-position: -180px 10px;
+    }
+
+    #menu-tramites .btn-area-salud:after {
+        background: #e24848;
+    }
+
+    #menu-tramites .btn-solicitud-de-tramites .icono {
+        background-position: -180px -80px;
+    }
+
+    #menu-tramites .btn-solicitud-de-tramites:after {
+        background: #256f88;
+    }
+
+    #menu-tramites .btn-mis-datos .icono {
+        background-position: -180px -180px;
+    }
+
+    #menu-tramites .btn-mis-datos:after {
+        background: #826294;
+    }
+
+    #menu-tramites .btn-mas .icono {
+        background-position: -180px -270px;
+    }
+
+    #menu-tramites .btn-mas:after {
+        background: #826294;
+    }
+
+@media screen and (min-width:290px) and (max-width:767px) {
+    .nav-tramites {
+        display: block;
+    }
+
+    #menu-tramites {
+        display: none;
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:640px) {
+    #menu-tramites li {
+        width: 45%;
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px) {
+    #menu-tramites li {
+        margin-right: 5px;
+    }
+}
+/*breadcrumb*/
+.breadcrumb {
+    background: none;
+    border-bottom: 1px solid #E4E7F0;
+    color: #8993B0;
+    padding: 0px 0px 15px 0px;
+}
+
+    .breadcrumb p {
+        margin: 0px;
+        padding: 0px;
+    }
+/*HOME*/
+.img-intro {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+}
+
+    .img-intro img {
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+    }
+/*BOTONERA DE CERTIFICADOS*/
+#nav-solicitudes {
+}
+
+    #nav-solicitudes ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-solicitudes ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-solicitudes ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-solicitudes ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-solicitudes ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-solicitudes ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-solicitudes ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-solicitudes ul li a.btn-intereses {
+                    background-position: 10px -278px;
+                }
+
+                #nav-solicitudes ul li a.btn-calidades {
+                    background-position: 10px -588px;
+                }
+
+                #nav-solicitudes ul li a.btn-cargas-vigentes {
+                    background-position: 10px -140px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-anual {
+                    background-position: 10px -430px;
+                }
+
+                #nav-solicitudes ul li a.btn-renta-mensual {
+                    background-position: 10px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-prestamo-habitacional {
+                    background-position: -622px 25px;
+                }
+
+                #nav-solicitudes ul li a.btn-declaraciones-juradas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-solicitudes ul li a.btn-liquidacion-de-pension {
+                    background-position: -622px -585px;
+                }
+
+                #nav-solicitudes ul li a.btn-fechas-de-pago {
+                    background-position: -622px -275px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-lugar {
+                    background-position: -622px -435px;
+                }
+
+                #nav-solicitudes ul li a.btn-cambio-de-clave {
+                    background-position: 10px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizar-email {
+                    background-position: -622px -725px;
+                }
+
+                #nav-solicitudes ul li a.btn-actualizacion-de-domicilio {
+                    background-position: 10px -875px;
+                }
+
+                #nav-solicitudes ul li a.btn-convenios-salud {
+                    background-position: -622px -880px;
+                }
+
+                #nav-solicitudes ul li a.btn-consulta-descuento-salud {
+                    background-position: 12px -1030px;
+                }
+/*SISTEMA OAM*/
+#nav-sistema-oam {
+}
+
+    #nav-sistema-oam ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-sistema-oam ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-sistema-oam ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-sistema-oam ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-sistema-oam ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-sistema-oam ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-sistema-oam ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-sistema-oam ul li a.btn-emision-de-oam {
+                    background-position: -616px -129px;
+                }
+
+                #nav-sistema-oam ul li a.btn-consulta-por-titular {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-sistema-oam ul li a.btn-consulta-por-prestador {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-sistema-oam ul li a.btn-validacion-de-oam {
+                    background-position: 10px -278px;
+                }
+
+                #nav-sistema-oam ul li a.btn-anulacion-de-oam {
+                    background-position: -622px -585px;
+                }
+/*ADMINISTRACION OAM*/
+#nav-administracion-oam {
+}
+
+    #nav-administracion-oam ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-administracion-oam ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-administracion-oam ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-administracion-oam ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-administracion-oam ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-administracion-oam ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-administracion-oam ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-administracion-oam ul li a.btn-prestadores-hospitalarios {
+                    background-position: 10px -278px;
+                }
+
+                #nav-administracion-oam ul li a.btn-tipo-emisor-oam {
+                    background-position: 16px -584px;
+                }
+
+                #nav-administracion-oam ul li a.btn-tipos-beneficiarios {
+                    background-position: 16px -584px;
+                }
+
+                #nav-administracion-oam ul li a.btn-parametros {
+                    background-position: -620px -1021px;
+                }
+
+                #nav-administracion-oam ul li a.btn-estadistica-oam {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-administracion-oam ul li a.btn-nomina-ordenes {
+                    background-position: -616px -129px;
+                }
+
+                #nav-administracion-oam ul li a.btn-prestaciones-genericas {
+                    background-position: -622px -585px;
+                }
+
+                #nav-administracion-oam ul li a.btn-estadisticas-tipo-presentacion {
+                    background-position: -617px -1161px;
+                }
+/*ARCHIVO LEGAL*/
+#nav-archivo-legal {
+}
+
+    #nav-archivo-legal ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-archivo-legal ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-archivo-legal ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-archivo-legal ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-archivo-legal ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-archivo-legal ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-archivo-legal ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-archivo-legal ul li a.btn-archivo-legal {
+                    background-position: -622px -130px;
+                }
+/*AGENCIA VIRTUAL*/
+#nav-agencia-virtual {
+}
+
+    #nav-agencia-virtual ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-agencia-virtual ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-agencia-virtual ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-agencia-virtual ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-agencia-virtual ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-agencia-virtual ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-agencia-virtual ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-agencia-virtual ul li a.btn-consultor-en-linea {
+                    background-position: 20px -1312px;
+                }
+
+                #nav-agencia-virtual ul li a.btn-consultor-directo {
+                    background-position: -613px -1298px;
+                }
+/*ENCUENTAS*/
+#nav-encuestas {
+}
+
+    #nav-encuestas ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-encuestas ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-encuestas ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-encuestas ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-encuestas ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-encuestas ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-encuestas ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-encuestas ul li a.btn-activacion-de-encuestas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-encuestas ul li a.btn-bajar-resultados {
+                    background-position: -622px -585px;
+                }
+
+                #nav-encuestas ul li a.btn-modulo-autoconsulta {
+                    background-position: 10px -875px;
+                }
+
+                #nav-encuestas ul li a.btn-necesidades-capacitacion {
+                    background-position: -617px -1457px;
+                }
+
+                #nav-encuestas ul li a.btn-crear-encuestas {
+                    background-position: -622px -130px;
+                }
+
+                #nav-encuestas ul li a.btn-satisfaccion-sitio-web {
+                    background-position: 10px -278px;
+                }
+/*GTI*/
+#nav-gti {
+}
+
+    #nav-gti ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-gti ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-gti ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-gti ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-gti ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-gti ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-gti ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-gti ul li a.btn-sistema-salud-region {
+                    background-position: -622px -435px;
+                }
+
+                #nav-gti ul li a.btn-imponentes-region {
+                    background-position: -622px -435px;
+                }
+
+                #nav-gti ul li a.btn-vulnerabilidad {
+                    background-position: 10px -278px;
+                }
+
+                #nav-gti ul li a.btn-beneficios-a-social-region {
+                    background-position: 26px -1468px;
+                }
+/*CONSULTAS SRCEL*/
+#nav-consultas-srcel {
+}
+
+    #nav-consultas-srcel ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-consultas-srcel ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-consultas-srcel ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-consultas-srcel ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-consultas-srcel ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-consultas-srcel ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-consultas-srcel ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-consultas-srcel ul li a.btn-datos-personales {
+                    background-position: -616px -129px;
+                }
+
+                #nav-consultas-srcel ul li a.btn-posesion-efectiva {
+                    background-position: -622px -585px;
+                }
+
+/*TRAMITES*/
+#nav-tramites {
+}
+
+    #nav-tramites ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-tramites ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-tramites ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-tramites ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-tramites ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-tramites ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-tramites ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-tramites ul li a.btn-solicitud-de-tramite {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion-de-areas {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-tramites ul li a.btn-administracion-carga-tareas {
+                    background-position: -616px -129px;
+                }
+
+/*VALIDACIÓN SALUD*/
+#nav-validacion {
+}
+
+    #nav-validacion ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-validacion ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-validacion ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-validacion ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-validacion ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-validacion ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-validacion ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-validacion ul li a.btn-consulta-beneficiarios {
+                    background-position: 12px -1030px;
+                }
+
+/*MANDATOS*/
+#nav-mandatos {
+}
+
+    #nav-mandatos ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-mandatos ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-mandatos ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-mandatos ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-mandatos ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-mandatos ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-mandatos ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-mandatos ul li a.btn-recepcion {
+                    background-position: -622px 25px;
+                }
+
+/*IMPONENTES*/
+#nav-imponentes {
+}
+
+    #nav-imponentes ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-imponentes ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-imponentes ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-imponentes ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-imponentes ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-imponentes ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-imponentes ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-imponentes ul li a.btn-consulta-desahucios {
+                    background-position: 12px -1030px;
+                }
+
+                #nav-imponentes ul li a.btn-fecha-termino {
+                    background-position: -622px -275px;
+                }
+
+/*AUDITORIA INTERNA*/
+#nav-auditoria-interna {
+}
+
+    #nav-auditoria-interna ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-auditoria-interna ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-auditoria-interna ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-auditoria-interna ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-auditoria-interna ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-auditoria-interna ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-auditoria-interna ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-auditoria-interna ul li a.btn-informe-auditor {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-respuesta-auditado {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-seguimiento-auditado {
+                    background-position: 10px -588px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-seguimiento-dai {
+                    background-position: 10px -588px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-respuesta-auditor {
+                    background-position: -616px -129px;
+                }
+
+                #nav-auditoria-interna ul li a.btn-actividad-auditor {
+                    background-position: -616px -129px;
+                }
+
+
+/*MANTENCION*/
+#nav-mantencion {
+}
+
+    #nav-mantencion ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav-mantencion ul li {
+            background: #EAE6E3;
+            box-shadow: 0px 2px 0px 0px rgb(202,196,192);
+            display: inline-block;
+            margin: 0px 4% 40px 0px;
+            padding: 0px;
+            width: 260px;
+            height: 100px;
+            position: relative;
+            vertical-align: top;
+        }
+
+            #nav-mantencion ul li:nth-child(2n+2) {
+                margin-right: 0px;
+            }
+
+            #nav-mantencion ul li a {
+                background: url(../images/html/sprite-menu-solicitudes.png) no-repeat 0px 0px;
+                color: #9F9D99;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 700;
+                text-shadow: 0px 1px 0px rgb(255,255,255);
+                display: block;
+                line-height: 120%;
+                text-decoration: none;
+                padding: 42px 0px 0px 98px;
+            }
+
+                #nav-mantencion ul li a.txt-largo {
+                    padding-top: 32px;
+                }
+
+                #nav-mantencion ul li a:after {
+                    background: #4173b3;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #nav-mantencion ul li a:hover:after {
+                    width: 100%;
+                }
+
+                #nav-mantencion ul li a.btn-usuarios-externos {
+                    background-position: 10px -140px;
+                }
+
+                #nav-mantencion ul li a.btn-permisos {
+                    background-position: -620px -1021px;
+                }
+
+                #nav-mantencion ul li a.btn-perfiles {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-funciones {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-menus {
+                    background-position: 20px -1312px;
+                }
+
+                #nav-mantencion ul li a.btn-cambio-clave {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-aplicaciones {
+                    background-position: -617px -1457px;
+                }
+
+                #nav-mantencion ul li a.btn-crear-clave-pensionado {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-informe-cambio-clave-pensionado {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-circulos {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-actualizar-email {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-envio-email-corporativo {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-mant-mail-corporativo {
+                    background-position: -622px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-desbloqueo-de-claves {
+                    background-position: 10px -725px;
+                }
+
+                #nav-mantencion ul li a.btn-estadistica-uso {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-consultor-cpdn {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-prestador-salud {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-crea-cons-ext-salud {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-usuario-institucion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-usuarios-intranet {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-factor-actualizacion-sii {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-declaracion-jurada {
+                    background-position: -622px -585px;
+                }
+
+                #nav-mantencion ul li a.btn-tarjetas-de-identificacion {
+                    background-position: -616px -129px;
+                }
+
+                #nav-mantencion ul li a.btn-estadisticas-ips {
+                    background-position: 25px -1163px;
+                }
+
+                #nav-mantencion ul li a.btn-vigencia-usuarios {
+                    background-position: -622px -585px;
+                }
+
+
+
+@media screen and (min-width:280px) and (max-width:640px) {
+    #nav-solicitudes ul li {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+/*FORMULARIOS*/
+.formularios {
+    padding: 0px 0px 50px 0px;
+}
+
+    .formularios input[type="text"], .formularios input[type="password"], .formularios input[type="email"], .formularios select {
+        border: 1px solid #B5B5B5;
+        padding-left: 10px;
+        height: 40px;
+        color: #929294;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #939297;
+        margin-bottom: 10px;
+    }
+
+    .formularios .bootstrap-select {
+        margin-bottom: 10px;
+    }
+
+        .formularios .bootstrap-select button {
+            height: 40px;
+            color: #939297;
+        }
+
+    .formularios .date {
+        width: 150px;
+    }
+
+        .formularios .date input {
+            width: 110px;
+        }
+
+        .formularios .date .input-group-addon {
+            background: none;
+            border: none;
+            border-radius: 0px;
+        }
+
+    .formularios p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .formularios label {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .formularios .radiobutton {
+        padding-top: 5px;
+    }
+
+        .formularios .radiobutton label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 18px;
+            margin-right: 15px;
+            vertical-align: top;
+            font-weight: normal;
+        }
+
+        .formularios .radiobutton input[type=radio] {
+            display: none;
+        }
+
+        .formularios .radiobutton label:before {
+            background: #FFF;
+            border: 1px solid #B6B6B6;
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 10px;
+            height: 12px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+        }
+
+        .formularios .radiobutton input[type=radio]:checked + label:before {
+            background: #FFF;
+            content: "\2022";
+            color: #939297;
+            font-size: 12px;
+            text-align: center;
+            line-height: 10px;
+        }
+
+    .formularios .form-ayuda {
+        color: #888;
+        padding: 10px;
+    }
+
+    .formularios .form-declaracion-jurada label {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        min-height: 40px;
+    }
+
+    .formularios .form-declaracion-jurada-folio {
+    }
+
+        .formularios .form-declaracion-jurada-folio label {
+            margin-right: 10px;
+        }
+
+        .formularios .form-declaracion-jurada-folio input[type="text"] {
+            width: 210px;
+        }
+/*INDICADORES ECONOMICOS*/
+.indicadores-economicos {
+    width: 230px;
+    margin: 0px auto 20px auto;
+    text-align: left;
+}
+
+    .indicadores-economicos.pull-right[class*="col-"] {
+        width: 35%;
+        min-width: 280px;
+        margin-right: 0px;
+    }
+
+    .indicadores-economicos h3 {
+        background: #A0B9D8;
+        font-size: 1em;
+        color: #FFF;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .indicadores-economicos p {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .indicadores-economicos .indicadores-contenido {
+        border: 2px solid #CDDDEC;
+        padding: 10px;
+    }
+
+@media screen and (min-width:280px) and (max-width:767px) {
+    .indicadores-economicos.pull-right[class*="col-"] {
+        width: 100%;
+        min-width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+        float: none;
+        clear: both;
+    }
+}
+/*TABLA DATOS*/
+.table-data {
+    color: #6B7B91;
+    font-size: 12px;
+    border: 1px solid #A0B9D8;
+}
+
+    .table-data thead tr th {
+        background: #A0B9D8;
+        color: #FFF;
+        font-size: 12px;
+        font-weight: normal;
+        vertical-align: top;
+    }
+
+    .table-data tbody tr td {
+        border: 1px solid #A0B9D8;
+        color: #6B7B91;
+        vertical-align: top;
+    }
+/*DATOS ODD EVEN*/
+.datos-odd-even {
+    border: 2px solid #CFDCEC;
+}
+
+    .datos-odd-even p {
+        margin: 0px;
+        padding: 10px;
+    }
+
+        .datos-odd-even p:nth-child(odd) {
+            background: #D9E3EF;
+        }
+/*TABLA: ODD EVEN*/
+.table-odd-even {
+    border: 2px solid #CFDCEC;
+    font-size: 1em;
+    color: #6B7B91;
+}
+
+    .table-odd-even td {
+        vertical-align: top;
+        padding: 5px 10px;
+        border-right: 1px solid #CFDCEC;
+    }
+
+    .table-odd-even tr:nth-child(odd) td {
+        background: #D9E3EF;
+    }
+/*RESULTADO*/
+.resultado {
+    padding-top: 10px;
+}
+
+    .resultado .text-success {
+    }
+/*BANNERS BOTTOM*/
+#banners-bottom {
+    clear: both;
+    font-size: 21px;
+    line-height: 115%;
+}
+
+    #banners-bottom ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+        #banners-bottom ul li {
+            margin: 0px 20px 0px 0px;
+            width: 100%;
+            max-width: 310px;
+            padding: 0px;
+            float: left;
+        }
+
+            #banners-bottom ul li:last-child {
+                margin-right: 0px;
+            }
+
+            #banners-bottom ul li a {
+                background: url(../images/html/sprite-menu-bottom.png) no-repeat 0px 0px #86A5CE;
+                height: 120px;
+                border-bottom: 2px solid #AFC4DF;
+                padding: 40px 0px 40px 100px;
+                display: block;
+                color: #FFF;
+                text-decoration: none;
+                position: relative;
+            }
+
+                #banners-bottom ul li a:after {
+                    background: #EF4143;
+                    position: absolute;
+                    right: 0;
+                    bottom: -2px;
+                    width: 0;
+                    height: 3px;
+                    content: "";
+                    transition: width 0.3s;
+                }
+
+                #banners-bottom ul li a:hover:after {
+                    width: 100%;
+                }
+
+            #banners-bottom ul li .call-center {
+                background-position: 0px 0px;
+            }
+
+            #banners-bottom ul li .consultas {
+                background-position: -15px -160px;
+                background-color: #AFC4DF;
+            }
+
+            #banners-bottom ul li .solicitar-clave {
+                background-position: -10px -505px;
+            }
+
+            #banners-bottom ul li .recuperar-clave {
+                background-position: -10px -335px;
+            }
+
+@media screen and (min-width:280px) and (max-width:800px) {
+    #banners-bottom ul li {
+        float: none;
+        max-width: 100%;
+        clear: both;
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    #banners-bottom ul li {
+        margin-right: 5px;
+    }
+}
+/*FOOTER*/
+#footer {
+    background: #FFF;
+    clear: both;
+    color: #A0A0A0;
+    font-size: 12px;
+    line-height: 150%;
+    margin-top: 30px;
+    position: relative;
+}
+
+    #footer .linea-gob {
+        width: 100%;
+        font-size: 1px;
+    }
+
+        #footer .linea-gob .linea-01, #footer .linea-gob .linea-02 {
+            width: 50%;
+            height: 2px;
+            display: block;
+            font-size: 1px;
+            float: left;
+        }
+
+        #footer .linea-gob .linea-01 {
+            background: #006BB7;
+        }
+
+        #footer .linea-gob .linea-02 {
+            background: #EF4143;
+        }
+
+    #footer .contacto {
+        padding: 30px 10px 20px 10px;
+    }
+
+    #footer .linea-gob.bottom {
+        position: absolute;
+        width: 130px;
+        bottom: 0px;
+    }
+
+        #footer .linea-gob.bottom .linea-01, #footer .linea-gob.bottom .linea-02 {
+            height: 14px;
+        }

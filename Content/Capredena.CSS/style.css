@@ -1,0 +1,219 @@
+﻿@font-face {
+    font-family: OpenSansRegular;
+    src: url("../../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+.estiloBody {
+    background: #edf1f7;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #5B5B5B;
+}
+.color-header {
+    background: #edf1f7;
+}
+
+.titulo-header {
+    color: #4173B3;
+    margin-left: 5px;
+    font-family: "OpenSansRegular", "Arial", "sans-serif";
+}
+
+/*FONTSIZE DINÁMICO HEADER*/
+.fontsize {
+    padding: 15px 40px 0px 0px;
+}
+
+.fontsize ul li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 0 0 4px;
+    line-height: 110%;
+    text-decoration: none;
+}
+
+.fontsize ul li a {
+    background: #bdc9d1;
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 2px 0;
+    text-align: right;
+}
+
+.fontsize ul li.small a {
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+}
+.fontsize ul li.medium a {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    margin: 4px 0 0;
+}
+.fontsize ul li.large a {
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+}
+.fontsize ul li.current a {
+    background: #0f69b4;
+}
+
+#contenidos {
+    background: #FFF;
+    border-bottom: 1px solid #BDC9D1;
+    border-top: 2px solid #4173B3;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.breadcrumb {
+    background:none;
+    border-bottom: 1px solid #E4E7F0;
+    color: #8993B0;
+    padding: 0px 0px 15px 0px;
+}
+
+.breadcrumb ul li{
+    text-decoration:none;
+    display:inline-block;
+}
+.padding-contenidos {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.padding-contenidos .row-btns {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+
+.btn-contenido {
+    border: 1px solid #4273B4;
+    width: auto;
+    text-align: center;
+    font-family: "Arial";
+    white-space: nowrap;
+    line-height: 20px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #4173B3;
+    margin: 0px 10px 0 0px;
+    text-decoration: none;
+}
+
+   
+.btn-contenido:hover {
+    background: #4273B4;
+    border: 1px solid #4273B4;
+    color: #FFF;
+    text-decoration: none;
+}
+/******************CONTENIDO*****************/
+.no-padding-left{
+    padding-left:0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.reservar-hora {
+    color: #4173B3;
+    font-family: "OpenSansRegular";
+}
+.pasos {
+    font-family: "OpenSansRegular";
+    font-size: 1em;
+}
+.paso-border {
+    background: #a1c4f8;
+    font-weight:bold;
+    color: #4173B3;
+    border-bottom: 2.5px solid #4173B3;
+    height: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.paso-sinborder {
+    background: #edf1f7;
+    color: #4173B3;
+    height: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.formulario {
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: "OpenSansRegular";
+    font-size: 1em;
+}
+
+.botones-footer{
+    margin-top:30px;
+    padding:0px;
+}
+
+.hora-probable {
+    color: #4173B3;
+    font-family: "OpenSansRegular", "Arial";
+}
+
+.resultados{
+    background-color: #fff;
+    
+}
+.busqueda {
+    margin-top: 20px;
+    height: 40px;
+    background: #4173B3;
+    color: #fff;
+    font-family: "OpenSansRegular", "Arial";
+    font-size: 1em;
+    text-align: left;
+}
+
+.busqueda >p{
+    padding:10px;
+    margin:0px;
+}
+.item-categorias{
+    padding:0px;
+}
+.categorias {
+    border-top: 1px solid #fff;
+    height: 50px;
+    background: #a1c4f8;
+    font-size: 1em;
+    text-align: left;
+    color: #fff;
+    font-family: "OpenSansRegular", "Arial";
+}
+.item-categorias > .categorias >p {
+    margin: 12px;
+}
+
+.horas-disponibles{
+    height:310px;
+  }
+.titulo-cita {
+    text-align: center;
+    font-family: "OpenSansRegular", "Arial";
+    color: #4173B3;
+}
+.datos-cita {
+    font-family: "OpenSansRegular", "Arial";
+    color: #4173B3;
+}
+}
+/*table thead tr th {
+    background-color: #bdc9d1;
+    color: #4273B4;
+    font-family: "OpenSansRegular", "Arial";
+}*/
